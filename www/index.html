@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hello.css">
+
+        <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>-->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/hello.js"></script>
+        <script src="js/camera.js"></script>
+
+        <!--<script src="js/wb.js" type="text/javascript" charset="utf-8"></script>-->
+
+        <title>Hello World</title>
+    </head>
+    <body>
+
+        <div data-role="page" id="main" >
+            <div data-role="header" data-position="fixed" style="height: 4rem">
+                <h1 style="top: 1.25rem; position: relative;font-size: 1.2rem">分享组件</h1>
+            </div>
+
+
+
+
+            <!--<iframe id="framePage" src="mainPage.html"  height="200" style="width: 100%; top:4rem;border: none" scrolling="yes">-->
+            <!--</iframe>-->
+
+            <div id="textShareDIV" >
+                <p> </p>
+                <label for="textarea-a" style="color:darkslateblue;font-size: 1.1rem">在这里输入要分享的内容:</label>
+                <textarea name="textarea" id="textShareContent" ></textarea>
+
+                <button id="textShareBtn">分享文字内容</button>
+
+            </div>
+
+            <div id="imgShareDIV" style=" text-align:center">
+
+                <label for="textarea-a" style="text-align: left;color:darkslateblue;font-size: 1.1rem">分享内容和图片:</label>
+                <textarea name="textarea" id="imgShareContent"></textarea>
+
+                <img style="height: 15rem;width: auto" src="img/logo.png" id="imgShareImg">
+
+                <button id="imgShareBtn">分享文字图片</button>
+
+            </div>
+
+
+            <!--<div data-role="footer" data-position="fixed" style="height: 3rem">-->
+            <!--<h1>这是底部，还没想好放什么</h1>-->
+            <!--</div>-->
+
+            <!--<button type="button" id="wb_publish" >fefe</button>-->
+            <div id="shareways" data-position="fixed" >
+                <div id="shareSina" class="fourShare">
+
+                    <!--<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="middle" refer="y" appkey="1xqcb" ></wb:publish>-->
+                    <img src="img/umeng_socialize_sina_on.png">
+                </div>
+                <div id="shareQQ" class="fourShare">
+                    <img src="img/umeng_socialize_qq_on.png">
+                </div>
+                <div id="shareWX" class="fourShare">
+                    <img src="img/umeng_socialize_wechat.png">
+                </div>
+                <div id="shareWXC" class="fourShare">
+                    <img src="img/umeng_socialize_wxcircle.png">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div data-role="page" id="page2">
+            <div data-role="header" data-position="fixed" style="height: 4rem">
+                <a id="goback" href="#main">返回</a>
+                <h1 style="top: 1.25rem; position: relative;font-size: 1.2rem">分享组件</h1>
+            </div>
+
+
+
+            <iframe id="framePage" name="fr" height="600" style="width: 100%; top:4rem;border: none" scrolling="yes">
+            </iframe>
+
+
+        </div>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta charset="utf-8">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hello.css">
+
+    <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>-->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/hello.js"></script>
+
+    <!--<script src="js/wb.js" type="text/javascript" charset="utf-8"></script>-->
+
+    <title>Hello World</title>
+</head>
+<body>
+
+
+    <div id="textShareDIV">
+
+        <label for="textarea-a" style="color:darkslateblue;font-size: 1.1rem">在这里输入要分享的内容:</label>
+        <textarea name="textarea" id="textShareContent"></textarea>
+
+        <button id="textShareBtn">分享文字内容</button>
+
+    </div>
+
+    <div id="imgShareDIV" style=" text-align:center">
+
+        <label for="textarea-a" style="text-align: left;color:darkslateblue;font-size: 1.1rem">分享内容和图片:</label>
+        <textarea name="textarea" id="imgShareContent"></textarea>
+
+        <img style="height: 15rem;width: auto" src="img/logo.png" id="imgShareImg">
+
+        <button id="imgShareBtn">分享文字图片</button>
+
+    </div>
+
+
+    <!--<div data-role="footer" data-position="fixed" style="height: 3rem">-->
+    <!--<h1>这是底部，还没想好放什么</h1>-->
+    <!--</div>-->
+
+    <!--<button type="button" id="wb_publish" >fefe</button>-->
+    <div id="shareways" data-position="fixed" >
+        <div id="shareSina" class="fourShare">
+
+            <!--<img src="img/umeng_socialize_sina_on.png">-->
+            <!--<wb:share-button appkey="17965523" addition="number" type="button"></wb:share-button>-->
+            <img src="img/umeng_socialize_sina_on.png">
+        </div>
+        <div id="shareQQ" class="fourShare">
+            <img src="img/umeng_socialize_qq_on.png">
+        </div>
+        <div id="shareWX" class="fourShare">
+            <img src="img/umeng_socialize_wechat.png">
+        </div>
+        <div id="shareWXC" class="fourShare">
+            <img src="img/umeng_socialize_wxcircle.png">
+        </div>
+    </div>
+
+
+</body>
+</html>
